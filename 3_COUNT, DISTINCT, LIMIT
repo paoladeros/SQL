@@ -1,0 +1,10 @@
+COUNT, DISTINCT, LIMIT
+
+COUNT is a built-in database function that retrieves the number of rows that match the query criteria. 
+For example, get the total number of rows in a given table, select COUNT(*) from tablename.
+
+DISTINCT is used to remove duplicate values from a result set. 
+Example, to retrieve unique values in a column, select DISTINCT columnname from tablename.
+
+LIMIT is used for restricting the number of rows retrieved from the database. 
+Example, retrieve just the first 10 rows in a table. Select * from tablename LIMIT 10.
