@@ -5,4 +5,6 @@ SQL basic
 
 2 SELECT statement
 
-3
+3 COUNT, DISTINCT, LIMIT
+
+4 INSERT statement
