@@ -13,7 +13,7 @@ In the book entity example, select star from book gives the result set of four r
 All the data rows for all columns in the table book are displayed. 
 In addition, you can also retrieve all the rows for all columns by specifying the column names individually in the SELECT statement. 
 
-ou don't always have to retrieve all the columns in a table. You can retrieve just a subset of columns. 
+You don't always have to retrieve all the columns in a table. You can retrieve just a subset of columns. 
 If you want, you can retrieve just two columns from the table book. For example book_id and title. 
 In this case, the select statement is select book_id, title from book. 
 In this case, only the two columns display for each of the four rows. 
