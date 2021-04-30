@@ -9,4 +9,4 @@ SQL basic
 
 4 INSERT statement
 
-5 UPDATE and DELETE
+5 UPDATE and DELETE statements
