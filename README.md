@@ -8,3 +8,5 @@ SQL basic
 3 COUNT, DISTINCT, LIMIT
 
 4 INSERT statement
+
+5 UPDATE and DELETE
