@@ -12,3 +12,5 @@ SQL basic
 5 UPDATE and DELETE statements
 
 6 Relational Database 
+
+7 Types of SQL statements (DDL vs. DML)
