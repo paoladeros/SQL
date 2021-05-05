@@ -16,3 +16,5 @@ SQL basic
 7 Types of SQL statements (DDL vs. DML)
 
 8 CREATE TABLE Statement
+
+9 ALTER, DROP, and Truncate tables
