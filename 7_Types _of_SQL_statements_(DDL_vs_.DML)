@@ -13,4 +13,5 @@ These are also sometimes referred to as CRUD operations, that is, Create, Read, 
 Common DML statement types include INSERT, SELECT, UPDATE, and DELETE. 
 INSERT: is used for inserting a row or several rows of data into a table;
 SELECT: reads or selects row or rows from a table; 
-UPDATE: edits row or rows in a table; And DELETE: removes a row or rows of data from a table. 
+UPDATE: edits row or rows in a table;
+DELETE: removes a row or rows of data from a table. 
