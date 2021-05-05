@@ -1,0 +1,64 @@
+ALTER
+
+You use the ALTER TABLE statement to add or remove columns from a table, to modify the data type of columns, to add or remove keys, and to add or remove constraints. 
+
+Syntax:
+
+ALTER TABLE < table_name >
+  ADD COLUMN < column_name_1 > datatype
+  ...
+  ADD COLUMN < column_name_n > datatype;
+  
+For example, to add a telephone number column to the AUTHOR table in the Library database to store the author’s telephone number, use the following statement:
+
+ALTER TABLE author 
+  ADD COLUMN telephone_number BIGINT;
+  
+
+The data type for the column is BIGINT which can hold a number up to 19 digits long. 
+You also use the ALTER TABLE statement to modify the data type of a column.
+To do this, use the ALTER COLUMN clause specifying the new data type for the column. 
+For example, using a numeric data type for telephone number means that you cannot include parentheses, plus signs, or dashes as part of the number. 
+You can change the column to use the CHAR data type to overcome this. 
+
+ALTER TABLE author 
+  ALTER COLUMN telephone_number SET DATA
+  TYPE CHAR(20);
+  
+  
+DROP
+
+Altering the data type of a column containing existing data can cause problems though if the existing data is not compatible with the new data type. 
+For example, changing a column from the CHAR data type to a numeric data type will not work if the column already contains non-numeric data. 
+If you try to do this, you will see an error message in the notification log and the statement will not run. 
+If your spec changes and you no longer need this extra column, you can again use the ALTER TABLE statement, this time with the DROP COLUMN clause, to remove the column:
+
+ALTER TABLE author 
+DROP COLUMN telephone_number;
+
+Similar to using DROP COLUMN to delete a column from a table, you use the DROP TABLE statement to delete a table from a database. 
+If you delete a table that contains data, by default the data will be deleted alongside the table.
+
+Syntax:
+
+DROP TABLE < table_name > ;
+
+So, you use this statement: 
+
+DROP TABLE author; 
+
+to remove the table from the database
+  
+  
+TRUNCATE
+
+Sometimes you might want to just delete the data in a table rather than deleting the table itself.
+While you can use the DELETE statement without a WHERE clause to do this, it is generally quicker and more efficient to truncate the table instead. 
+You use the TRUNCATE TABLE statement to delete all of the rows in a table.
+  
+Syntax:
+
+TRUNCATE TABLE < table_name >
+
+IMMEDIATE;
+  
