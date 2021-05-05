@@ -1,0 +1,17 @@
+Create
+
+
+Create Table:
+
+Syntax:
+
+CREATE TABLE table_name
+
+(
+column_name_1 datatype, optional_parameters,
+  column_name_2 datatype, 
+  ...
+  column_name_n datatype
+)
+
+
