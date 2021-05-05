@@ -14,3 +14,5 @@ SQL basic
 6 Relational Database 
 
 7 Types of SQL statements (DDL vs. DML)
+
+8 CREATE TABLE Statement
