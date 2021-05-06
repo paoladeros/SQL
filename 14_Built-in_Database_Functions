@@ -1,0 +1,25 @@
+Most databases come with Built-in Functions.
+These functions can be included in SQL statements, allowing you to perform operations on data right within the database itself. 
+Using database functions can significantly reduce the amount of data that needs to be retrieved from the database. 
+That is, reduces network traffic and use of bandwidth. 
+When working with large data sets, it may be faster to use built in functions, rather than first retrieving the data into your application and then executing functions on the retrieved data.
+
+It is also possible to create your own functions, that is User-Defined Functions in the database.
+
+What are aggregate or column functions? 
+An aggregate function takes a collection of like values, such as all of the values in a column, as input, and returns a single value or null. 
+Examples of aggregate functions include: sum, minimum, maximum, average, etc. 
+When you use an aggregate function, the column in the result set by default is given a number. 
+It is possible to explicitly name the resulting column.
+MINimum, as the name implies, is used to get the lowest value. Similarly, MAXimum is used to get the highest value.
+Aggregate functions can also be applied on a subset of data instead of an entire column.
+The Average (AVG) function is used to return the average or the mean value.
+
+
+Scalar and String functions
+
+Scalar functions perform operations on individual values. 
+There is a class of scalar functions called string functions, that can be used for operations on strings. That is char and varchar values.
+Uppercase and lowercase functions can be used to return uppercase or lowercase values of strings.
+This type of statement is useful for matching values in the where clause, if you're not sure whether the values are stored in upper, lower or mixed case in the table. 
+You can also have one function operate on the output of another function.
