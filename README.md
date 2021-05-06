@@ -18,3 +18,5 @@ SQL basic
 8 CREATE TABLE Statement
 
 9 ALTER, DROP and Truncate tables
+
+10 Using String Patterns and Ranges
