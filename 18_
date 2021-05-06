@@ -1,0 +1,16 @@
+There are several ways to access multiple tables in the same query. 
+Namely, using Sub-queries, Implicit JOIN, and JOIN operators, such as INNER JOIN and OUTER JOIN.
+
+
+Implicit version of CROSS JOIN (also known as Cartesian Join) statement syntax
+
+SELECT column_name(s)
+FROM table1, table2;
+
+
+Implicit version of INNER JOIN statement syntax
+
+SELECT column_name(s)
+FROM table1, table2
+WHERE table1.column_name = table2.column_name;
+
