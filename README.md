@@ -22,3 +22,7 @@ SQL basic
 10 Using String Patterns and Ranges
 
 11 Sorting Result Sets
+
+12 Grouping Result Sets
+
+13
