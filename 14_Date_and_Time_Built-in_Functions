@@ -1,0 +1,10 @@
+Most databases contain special data types for dates and times.
+Db2 contains date, time, and timestamp types. 
+In Db2, date has eight digits: for year, month, and day. 
+Time has six digits: hours, minutes, and seconds.
+Timestamp has 20 digits: year, month, day, hour, minute, seconds, and microseconds where double X represents month and six Zs or Zs represents microseconds.
+Functions exist to extract the day, month, day of month, day of week, day of year, week, hour, minute, and second. 
+ 
+The day function can be used to extract the day portion from a date.
+Date and time functions can be used in the where clause. 
+You can also perform date or time arithmetic.
