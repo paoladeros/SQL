@@ -30,3 +30,5 @@ SQL basic
 14 Date and Time Built-in Functions
 
 15 Sub-Queries and Nested Selects
+
+16 Working with Multiple Tables
