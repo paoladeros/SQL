@@ -1,0 +1,13 @@
+ Sub-queries or sub selects are like regular queries but placed within parentheses and nested inside another query.
+ This allows you to form more powerful queries than would have been otherwise possible. 
+ 
+ How does a typical Nested SELECT statement syntax look?
+
+SELECT column_name [, column_name ]
+FROM table1 [, table2 ]
+WHERE column_name OPERATOR
+   (SELECT column_name [, column_name ]
+   FROM table1 [, table2 ]
+   WHERE condition);
+
+ 
