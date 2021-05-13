@@ -31,4 +31,4 @@ SQL basic
 
 15 Sub-Queries and Nested Selects
 
-16 Working with Multiple Tables
+16 JOIN
