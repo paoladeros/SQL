@@ -32,3 +32,5 @@ SQL basic
 15 Sub-Queries and Nested Selects
 
 16 JOIN
+
+17 Views
