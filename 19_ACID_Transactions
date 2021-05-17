@@ -1,0 +1,17 @@
+ACID Transactions
+
+A transaction is simply a sequence of operations performed using one or more SQL statements as a single logical unit of work. 
+A database transaction must be ACID (Atomic, Consistent, Isolated and Durable).
+Atomic - All changes must be performed successfully or not at all. 
+Consistent - Data must be in a consistent state before and after the transaction. 
+Isolated - No other process can change the data while the transaction is running. 
+Durable - The changes made by the transaction must persist.
+
+To start an ACID transaction, use the command BEGIN.
+Any commands you issue after that are part of the transaction, until you issue either COMMIT, or ROLLBACK. 
+If all the commands complete successfully, issue a commit command to save everything in the database to a consistent, stable state.
+If any of the commands fail, you can issue a rollback command to undo all the changes and leave the database in its previously consistent stable state.
+
+SQL statements can be called from languages like Java, C, R, and Python. 
+This requires the use of database-specific access APIs such as Java Database Connectivity (JDBC) for Java or a specific database connector like ibm_db for Python.
+
