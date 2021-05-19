@@ -2,15 +2,82 @@ There are several ways to access multiple tables in the same query.
 Namely, using Sub-queries, Implicit JOIN, and JOIN operators, such as INNER JOIN and OUTER JOIN.
 
 
-Implicit version of CROSS JOIN (also known as Cartesian Join) statement syntax
+Implicit version of CROSS JOIN (also known as Cartesian Join) statement syntax:
 
 SELECT column_name(s)
 FROM table1, table2;
+CROSS JOIN table2;
 
 
-Implicit version of INNER JOIN statement syntax
+Implicit version of INNER JOIN statement syntax:
 
 SELECT column_name(s)
 FROM table1, table2
 WHERE table1.column_name = table2.column_name;
+
+or:
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+WHERE condition;
+
+
+A join operation combines the rows from two or more tables based on a relationship between certain columns in these tables. 
+There are two types of table joins: inner joins and outer joins.
+
+Inner Join
+
+The most common type of join is an inner join, which displays only the rows from two tables that have matching value in a common column,
+usually the primary key of one table that exists as a foreign key in the second table.
+
+Outer Joins
+
+Outer joins, like inner joins, return the rows from each table that have matching values in the join columns. 
+Unlike inner joins, outer joins also return the rows that do not have a match between the tables.
+SQL offers you three types of outer joins: left outer join, right outer join and full outer join. 
+In a left outer join, all the rows from the first table (on the left side of the join predicate) are included, 
+and only the matching rows from the second table (on the right side of the join predicate).
+
+Full outer joins return all matching rows from both tables and all the rows from both tables that don’t have a match.
+
+
+How does a LEFT OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+LEFT OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+
+
+How does a RIGHT OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+RIGHT OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+
+
+How does a FULL OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+
+
+How does a SELF JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+
+
 
