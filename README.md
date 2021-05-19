@@ -1,5 +1,5 @@
 # SQL
-SQL basic
+SQL basics
 
 1 What is SQL
 
